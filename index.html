@@ -1,0 +1,22 @@
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>JSON Layout Viewer</title>
+            <meta name="description" content="View UI layouts contained inside a JSON file.">
+            <link rel="stylesheet" href="main.css">
+            <script type="text/javascript" src="jsonToLayout.js"></script>
+        </head>
+        <body>        
+            <h1>JSON Layout Viewer</h1>
+            <p>Choose a JSON file containing layout descriptions to view them below. The file can contain one or multiple layouts. You can find an example file here: <a href = "sample.json" target = "_blank">Sample.json</a></p>
+            <input type="file" id="files" name="files[]" multiple />
+            <button id="refresh" onclick="processFiles();">Refresh</button>
+            <br/><br/>
+            <p><output id="list"></output></p>
+            
+
+        </body>
+     
+
+    </html>
